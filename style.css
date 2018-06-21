@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+#content
+{
+    margin: 100px 50px 10px;
+    border: 1px solid black;
+}
+
+form
+{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+input
+{
+    flex: 5 1 350px;
+    margin: 5px;
+    padding: 5px;
+}
+
+button
+{
+    flex: 2 1 100px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: dodgerblue;
+    color: white;
+    border: 0px;
+    padding: 5px 10px;
+}
+
+#suggestions_pane
+{
+    margin: 5px 15px;
+    margin-top: 0px;
+    color: gray;
+    font-size: 13px;
+}
+
+#suggestions_pane > p
+{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.suggestion
+{
+    border: 2.25px solid dodgerblue;
+    border-radius: 20px;
+    color: dodgerblue;
+    padding: 5px;
+    font-size: 14px;
+    background-color: transparent;
+    transition: background-color .1s, color .1s;
+}
+
+.suggestion:hover
+{
+    background-color: dodgerblue;
+    color:white;
+}
+
+#gallery
+{
+    display: flex;
+    flex: column wrap;
+    margin: 15px;
+}
+
+img
+{
+    /* object-fit:  */
+    width: 250px;
+}

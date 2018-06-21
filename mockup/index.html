@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Roboto');
+        body
+        {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #content
+        {
+            margin: 100px 50px 10px;
+            border: 1px solid black;
+        }
+
+        form
+        {
+            display: flex;
+            flex-flow: row nowrap;
+            margin: 10px;
+            margin-bottom: 0px;
+        }
+
+        input
+        {
+            flex: 5 1 350px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        button
+        {
+            flex: 2 1 100px;
+            border-radius: 5px;
+            margin: 5px;
+            background-color: dodgerblue;
+            color: white;
+            border: 0px;
+            padding: 5px 10px;
+        }
+
+        #suggestions_pane
+        {
+            margin: 5px 15px;
+            margin-top: 0px;
+            color: gray;
+            font-size: 13px;
+        }
+
+        #suggestions_pane > p
+        {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .suggestion
+        {
+            border: 2.25px solid dodgerblue;
+            border-radius: 20px;
+            color: dodgerblue;
+            padding: 5px;
+            font-size: 14px;
+            background-color: transparent;
+            transition: background-color .1s, color .1s;
+        }
+
+        .suggestion:hover
+        {
+            background-color: dodgerblue;
+            color:white;
+        }
+
+        #gallery
+        {
+            display: flex;
+            flex-flow: row wrap;
+            margin: 15px;
+            align-items: flex-start;
+        }
+
+        img
+        {
+            object-fit: contain;
+            width: 250px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app"></div>
+
+    <div id="content">
+
+            <form onSubmit={this.search}>
+                <input type="text" ref="search_field" name="search_field" id="search_field" placeholder="Search for images here"/>
+                <button type="submit">Search!</button>
+            </form>
+
+            <div id="suggestions_pane">
+                <p>Try these suggestions</p>
+                <a class="suggestion">cats</a>
+                <a class="suggestion">fireworks</a>
+                <a class="suggestion">museums</a>
+            </div>
+
+            <div id="gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/800px-Cat03.jpg" alt="">
+                <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&h=350" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/800px-Cat03.jpg" alt="">
+                <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&h=350" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/800px-Cat03.jpg" alt="">
+                <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&h=350" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/800px-Cat03.jpg" alt="">
+                <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&h=350" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/800px-Cat03.jpg" alt="">
+                <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&h=350" alt="">
+              
+            </div> 
+
+    </div>
+
+</body>
+</html>
